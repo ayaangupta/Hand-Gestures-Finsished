@@ -1,0 +1,59 @@
+.span{
+width: 50;
+height: 50;
+}
+
+h1{
+    width: 240px;
+    height: 50px;
+}
+
+body{
+    background-color: purple;
+}
+
+#label1{
+    background-color: white;
+}
+
+#label_webcam{
+    background-color: white;
+}
+
+#label_snapshot{
+    background-color: white;
+}
+
+#webcam{
+align-self: left;
+border-color: black;
+float:left;
+}
+
+#camera, #result{
+    border: 2px dashed black;
+    width: 350px;
+    height: 300px;
+}
+
+#snapshot{
+    align-self: right;
+    border-color: black;
+    float: right;
+}
+
+h2{
+    color: #ffffff;
+}
+
+h4{
+    color: white;
+}
+
+#big_div{
+    border-radius: 500px;
+}
+
+#update_gesture{
+    font-size: 30px;
+}

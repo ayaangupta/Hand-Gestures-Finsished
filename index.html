@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Hand Getures</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+</head>
+
+<body>
+    <div class="contianer">
+        <center>
+            <h1 class="btn btn-info">Hand Getures App
+                <br>
+                <span class="span">&#9996</span>
+                <span class="span">&#128070</span>
+                <span class="span">&#128076</span>
+                <span class="span">&#128077</span>
+                <span class="span">&#128079</span>
+            </h1>
+            <br>
+            <br>
+            <h2>Take a selfie of a gesture to know about it's meaning</h2>
+            <h4>On the following gestures the model is trained - </h4>
+            <span class="span">&#9996</span>
+            <span class="span">&#128070</span>
+            <span class="span">&#128076</span>
+            <span class="span">&#128077</span>
+            <span class="span">&#128400</span>
+            <br>
+            <br>
+            <br>
+            <label id="label1">Predection - <br>
+            <span id="update_gesture"></span></label>
+        </center>
+    </div>
+    <div id="big_div">
+        <center>
+    <div id="webcam">
+        <label class="col-md-4 col-sm-12 col-xs-12" id="label_webcam">Webcam View - </label>
+        <div id="camera">
+            <br><br>
+        </div>
+        <br>
+        <br>
+        <button onclick="take_snapshot()" class="btn btn-primary">Capture Image</button>
+    </div>
+
+    <div class="col-md-4 col-sm-12 col-xs-12" id="snapshot">
+        <label id="label_snapshot">Snapshot - </label>
+        <div id="result">
+            <br><br>
+        </div>
+        <button onclick="check()" class="btn btn-success">Predict Gesture</button>
+    </div>
+</center>
+</div>
+    <script src="main.js"></script>
+</body>
+
+</html>
